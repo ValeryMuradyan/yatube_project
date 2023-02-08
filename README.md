@@ -30,4 +30,4 @@ python3 manage.py runserver
 ```
 ### Авторы
 
-Valery Muradyan и его большие амбиции.
+Валерий Мурадян и его большие амбиции.

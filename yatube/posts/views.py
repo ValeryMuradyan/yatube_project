@@ -11,4 +11,5 @@ def index(request):
 
 
 def group_posts(request, slug):
-    return HttpResponse('Посты')
+    template = 'posts\group_list.html'
+    return render(request, template)
