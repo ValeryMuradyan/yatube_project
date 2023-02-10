@@ -7,19 +7,17 @@ from django.http import HttpResponse
 # Главная страница
 def index(request):
     template = 'posts\index.html'
-    title = 'YaTube'
+    title = 'Главная страница Yatube'
     context = {
-        'title': title,
-        'text': 'Это главная страница проекта Yatube'
+        'title': title, 
     }
     return render(request, template, context)
 
 
 def group_posts(request, slug):
     template = 'posts\group_list.html'
-    title = 'YaTube'
+    title = 'Yatube группы'
     context = {
         'title': title,
-        'text': 'Здесь будет информация о группах проекта Yatube'
     }
-    return render(request, template)
+    return render(request, template, context)
