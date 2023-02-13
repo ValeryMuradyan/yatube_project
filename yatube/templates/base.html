@@ -16,16 +16,21 @@
       favicon-16x16.png' %}">
     <meta name="msapplication-TileColor" content="#000">
     <meta name="theme-color" content="#ffffff">
-    <title>{{ title }}</title>
+
+    <title>
+      {{ title }}
+    </title>
+
   </head>
   <body>
+
     <header>
       {% include 'includes/header.html' %}
     </header>
 
     <main>
       {% block content %}
-        Контент не подвезли :(
+        Контент не подвезли
       {% endblock %}
     </main>
        

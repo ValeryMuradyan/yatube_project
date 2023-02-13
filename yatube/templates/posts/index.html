@@ -5,8 +5,10 @@
 
 {% block content %}
 {% for post in posts %}
-<div class="container py-5">     
+<div class="container py-5">
+
   <h1>Последние обновления на сайте</h1>
+
   <article>
     <ul>
       <li>
@@ -15,12 +17,15 @@
       <li>
         Дата публикации: {{ post.pub_date|date:"d E Y" }}
       </li>
-    </ul>      
+    </ul>
+    
     <p>
-      {{ post.text|linebreaksbr  }}
+      {{ post.text }}
     </p>
-    {% if posts.group %}   
-      <a href="{% url 'posts:group_posts' post.group.slug %}">все записи группы</a>
+
+    {% if post.group %}   
+      <a href="{% url 'posts:group_posts' post.group.slug %}">
+        все записи группы</a>
     {% endif %}
   </article>
 </div>

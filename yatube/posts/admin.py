@@ -1,11 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
 from .models import Group, Post
 
 
 class PostAdmin(admin.ModelAdmin):
-    # Перечисляем поля, которые должны отображаться в админке
     list_display = (
         'pk',
         'text',

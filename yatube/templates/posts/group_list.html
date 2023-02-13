@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-- Используется html 5 версии -->
+<!DOCTYPE html>
 {% extends 'base.html' %}
 
 {% block title %}
@@ -7,10 +7,13 @@
 
 {% block content %}
   <div class="container py-5">
+
     <h1>{{ group.title }}</h1>
+
     <p>
       {{ group.description }}
     </p>
+
     {% for post in posts %}
       <ul>
         <li>
