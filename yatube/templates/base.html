@@ -16,19 +16,25 @@
       favicon-16x16.png' %}">
     <meta name="msapplication-TileColor" content="#000">
     <meta name="theme-color" content="#ffffff">
+    <style>
+      .body-style { background-color: #1c1c1c; border-radius: 3px 3px 3px 3px; 
+        text-decoration: none }
+      .p { color: #bbc3c8; font-family: ‘Verdana’, sans-serif; font-size: 16px; 
+        line-height: 26px; text-indent: 30px; margin: 0; }
+    </style>
 
     <title>
       {{ title }}
     </title>
 
   </head>
-  <body>
+  <body class=body-style>
 
     <header>
       {% include 'includes/header.html' %}
     </header>
 
-    <main>
+    <main class=p>
       {% block content %}
         Контент не подвезли
       {% endblock %}

@@ -6,6 +6,12 @@
 {% endblock %}
 
 {% block content %}
+<head>
+  <style>
+    .entry { border-bottom: 3px solid #666; padding: 0 0 15px 0;
+      margin-bottom: 8px; }
+  </style>
+</head>
   <div class="container py-5">
 
     <h1>{{ group.title }}</h1>
@@ -19,7 +25,7 @@
         <li>
           Автор: {{ post.author.get_full_name }}
         </li>
-        <li>
+        <li class=entry>
           Дата публикации: {{ post.pub_date|date:"d E Y" }}
         </li>
       </ul>
